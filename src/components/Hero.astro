@@ -1,0 +1,55 @@
+---
+const personalImageAlt = "Raúl Armas";
+import Badge from "./Badge.astro";
+import LinkedInIcon from "../assets/svgs/LinkedIn.astro";
+import MailIcon from "../assets/svgs/Mail.astro";
+
+import SocialPill from "./SocialPill.astro";
+import RaulASDev from "../assets/imgs/RaulASDev.jpeg";
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="https://media.licdn.com/dms/image/C5603AQGuJ-JQTt_XgQ/profile-displayphoto-shrink_400_400/0/1661267867859?e=2147483647&v=beta&t=VFf8ly24yOAnQC6lY_wGc_mix21uX4RS0hz4yi1Grhc"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/midudev"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Raúl <br />
+    Desarrollador <span class="" style={{ color: "#F7B011" }}>Frontend</span>
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    +3 años de experiencia. Me destaco como desarrollador de software
+    especializado en el desarrollo <strong>Frontend con React</strong>, además
+    de contar con habilidades sólidas en el backend utilizando tecnologías como
+    cetrado <strong> Node.js, MongoDB, MySQL y C# .Net Core</strong>. Mi enfoque
+    principal radica en la creación de interfaces de usuario dinámicas y
+    atractivas, comprometido en ofrecer experiencias de usuario excepcionales.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:miduga@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill
+      href="https://www.linkedin.com/in/raul-armas-santiago-b1534bb2/"
+    >
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
